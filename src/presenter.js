@@ -1,30 +1,12 @@
 import sumar from "./sumador";
 import multiplicar from "./multiplicador";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
-
-const firstM = document.querySelector("#primer-numeroM");
-const secondM = document.querySelector("#segundo-numeroM");
-const formM = document.querySelector("#multiplicar-form");
-const divM = document.querySelector("#resultado-divM");
+const name = document.querySelector("#name");
+const form = document.querySelector("#saludar-form");
+const div = document.querySelector("#resp-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
   
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
-});
-
-formM.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const firstNumberM = Number.parseInt(firstM.value);
-  const secondNumberM = Number.parseInt(secondM.value);
-
-  divM.innerHTML = "<p>" + multiplicar(firstNumberM, secondNumberM) + "</p>";
+  //div.innerHTML = "Hola " + name.value;
 });
