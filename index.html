@@ -2,7 +2,12 @@
   <body>
     <h1>BotSaludador</h1>
     <h2>Hola</h2>
-   
+    <form id="saludar-form">
+      <label for="name">Tu nombre:</label>
+      <input type="text" id="name" />
+      <input type="submit" value="Saludar" id="saludar-button" />
+    </form>
+    <div id="resp-div"></div>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

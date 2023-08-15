@@ -8,5 +8,5 @@ const div = document.querySelector("#resp-div");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   
-  //div.innerHTML = "Hola " + name.value;
+  div.innerHTML = "Hola " + name.value;
 });
